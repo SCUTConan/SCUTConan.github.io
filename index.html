@@ -300,7 +300,27 @@
 <li>在 HTML5 中，只需进行script声明就可以，不需要添加<code>type=&quot;text/javascript&quot;</code>。JavaScript 是 HTML5 以及所有现代浏览器中的默认脚本语言！</li>
 <li>jQuery 语法是为 HTML 元素的选取编制的，可以对元素执行某些操作。基础语法是：<code>$(selector).action()</code>。</li>
 <li>jQuery 函数位于一个 document ready 函数中：<code>$(document).ready(function(){jQuery functions});</code>，为了防止文档在完全加载（就绪）之前运行 jQuery 代码。</li>
-<li></li>
+<li>jQuery 元素选择器和属性选择器允许您通过标签名、属性名或内容对 HTML 元素进行选择。</li>
+<li>由于 jQuery 是为处理 HTML 事件而特别设计的，那么当您遵循以下原则时，您的代码会更恰当且更易维护：<ul>
+<li>把所有 jQuery 代码置于事件处理函数中；</li>
+<li>把所有事件处理函数置于文档就绪事件处理器中，即docunment ready 函数中；</li>
+<li>把 jQuery 代码置于单独的 .js 文件中；</li>
+<li>如果存在名称冲突，则重命名 jQuery 库，即使用<code>var jq = jQuery.noConflict()</code>，帮助您使用自己的名称（比如 jq）来代替 $ 符号，或者使用<code>$.noConflict()</code>声明，即可使用jQuery代替$。</li>
+</ul>
+</li>
+<li>通过 jQuery，可以使用 hide() 和 show() 方法来隐藏和显示 HTML 元素，如<code>$(selector).show(speed,callback)</code>，其中 speed 为显示和隐藏的速度，而 callback 为显示和隐藏完成后执行的函数名称，除非设置了 speed 参数，否则不能设置该参数；toggle() 方法，如<code>$(selector).toggle()</code>可以代替 hide() 和 show() 方法，即显示被隐藏的元素和隐藏已显示的元素。</li>
+<li>jQuery fadeIn() 用于淡入已隐藏的元素；jQuery fadeOut() 方法用于淡出可见元素；jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换；jQuery fadeTo() 方法允许渐变为给定的不透明度（值介于 0 与 1 之间），如<code>$(selector).fadeTo(speed,opacity,callback)</code>，必需的 speed 参数规定效果时长，必需的 opacity 参数规定淡入淡出效果的不透明度，介于0到1之间。</li>
+<li>jQuery slideDown() 方法用于向下滑动元素；jQuery slideUp() 方法用于向上滑动元素；jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。</li>
+<li>jQuery animate() 方法用于创建自定义动画，语法为<code>$(selector).animate({params},speed,callback)</code>，必需的 params 参数定义形成动画的 CSS 属性，可选的 speed 参数规定效果的时长；另外注意默认地，所有 HTML 元素都有一个静态位置，且无法移动，如需对位置进行操作，要记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute！</li>
+<li>默认地，jQuery 提供针对动画的队列功能，即使用<pre><code>$(&quot;button&quot;).click(function(){
+    var div=$(&quot;div&quot;);
+    div.animate({height:&apos;300px&apos;,opacity:&apos;0.4&apos;},&quot;slow&quot;);
+    div.animate({width:&apos;300px&apos;,opacity:&apos;0.8&apos;},&quot;slow&quot;);
+    div.animate({height:&apos;100px&apos;,opacity:&apos;0.4&apos;},&quot;slow&quot;);
+    div.animate({width:&apos;100px&apos;,opacity:&apos;0.8&apos;},&quot;slow&quot;);
+});
+</code></pre>来执行队列功能。</li>
+<li>还有</li>
 </ol>
 
           
