@@ -100,7 +100,7 @@ jQuery效果
 
 从谷歌或微软引用 jQuery。许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所以结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。同时，大多数 CDN 都可以确保当用户向其请求文件时，会从离用户最近的服务器上返回响应，这样也可以提高加载速度。
 在 HTML5 中，只需进行script声明就可">
-<meta property="og:updated_time" content="2016-07-21T16:35:06.498Z">
+<meta property="og:updated_time" content="2016-07-22T07:13:16.502Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="子不语">
 <meta name="twitter:description" content="前端
@@ -307,20 +307,20 @@ jQuery效果
 <ol>
 <li>从谷歌或微软引用 jQuery。许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所以结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。同时，大多数 CDN 都可以确保当用户向其请求文件时，会从离用户最近的服务器上返回响应，这样也可以提高加载速度。</li>
 <li>在 HTML5 中，只需进行script声明就可以，不需要添加<code>type=&quot;text/javascript&quot;</code>。JavaScript 是 HTML5 以及所有现代浏览器中的默认脚本语言！</li>
-<li>jQuery 语法是为 HTML 元素的选取编制的，可以对元素执行某些操作。基础语法是：<code>$(selector).action()</code>。</li>
+<li>jQuery 语法是为 HTML 元素的选取编制的，可以对元素执行某些操作。基础语法是：<code>$(selector).action();</code>。</li>
 <li>jQuery 函数位于一个 document ready 函数中：<code>$(document).ready(function(){jQuery functions});</code>，为了防止文档在完全加载（就绪）之前运行 jQuery 代码。</li>
 <li>jQuery 元素选择器和属性选择器允许您通过标签名、属性名或内容对 HTML 元素进行选择。</li>
 <li>由于 jQuery 是为处理 HTML 事件而特别设计的，那么当遵循以下原则时，代码会更恰当且更易维护：<ul>
 <li>把所有 jQuery 代码置于事件处理函数中；</li>
 <li>把所有事件处理函数置于文档就绪事件处理器中，即docunment ready 函数中；</li>
 <li>把 jQuery 代码置于单独的 .js 文件中；</li>
-<li>如果存在名称冲突，则重命名 jQuery 库，即使用<code>var jq = jQuery.noConflict()</code>，使用自定名称（比如 jq）来代替 $ 符号，或者使用<code>$.noConflict()</code>声明，即可使用jQuery代替$。</li>
+<li>如果存在名称冲突，则重命名 jQuery 库，即使用<code>var jq = jQuery.noConflict();</code>，使用自定名称（比如 jq）来代替 $ 符号，或者使用<code>$.noConflict();</code>声明，即可使用jQuery代替$。</li>
 </ul>
 </li>
-<li>通过 jQuery，可以使用 hide() 和 show() 方法来隐藏和显示 HTML 元素，语法为<code>$(selector).show(speed,callback)</code>，其中 speed 为显示和隐藏的速度，而 callback 为显示和隐藏完成后执行的函数名称，除非设置了 speed 参数，否则不能设置该参数；toggle() 方法，如<code>$(selector).toggle()</code>可以代替 hide() 和 show() 方法，即显示被隐藏的元素和隐藏已显示的元素。</li>
-<li>jQuery fadeIn() 用于淡入已隐藏的元素；jQuery fadeOut() 方法用于淡出可见元素；jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换；jQuery fadeTo() 方法允许渐变为给定的不透明度（值介于 0 与 1 之间），语法为<code>$(selector).fadeTo(speed,opacity,callback)</code>，必需的 speed 参数规定效果时长，必需的 opacity 参数规定淡入淡出效果的不透明度，介于0到1之间。</li>
+<li>通过 jQuery，可以使用 hide() 和 show() 方法来隐藏和显示 HTML 元素，语法为<code>$(selector).show(speed,callback);</code>，其中 speed 为显示和隐藏的速度，而 callback 为显示和隐藏完成后执行的函数名称，除非设置了 speed 参数，否则不能设置该参数；toggle() 方法，如<code>$(selector).toggle()</code>可以代替 hide() 和 show() 方法，即显示被隐藏的元素和隐藏已显示的元素。</li>
+<li>jQuery fadeIn() 用于淡入已隐藏的元素；jQuery fadeOut() 方法用于淡出可见元素；jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换；jQuery fadeTo() 方法允许渐变为给定的不透明度（值介于 0 与 1 之间），语法为<code>$(selector).fadeTo(speed,opacity,callback);</code>，必需的 speed 参数规定效果时长，必需的 opacity 参数规定淡入淡出效果的不透明度，介于0到1之间。</li>
 <li>jQuery slideDown() 方法用于向下滑动元素；jQuery slideUp() 方法用于向上滑动元素；jQuery slideToggle() 方法可以在 slideDown() 与 slideUp() 方法之间进行切换。</li>
-<li>jQuery animate() 方法用于创建自定义动画，语法为<code>$(selector).animate({params},speed,callback)</code>，必需的 params 参数定义形成动画的 CSS 属性，可选的 speed 参数规定效果的时长；另外注意默认地，所有 HTML 元素都有一个静态位置，且无法移动，如需对位置进行操作，要记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute！</li>
+<li>jQuery animate() 方法用于创建自定义动画，语法为<code>$(selector).animate({params},speed,callback);</code>，必需的 params 参数定义形成动画的 CSS 属性，可选的 speed 参数规定效果的时长；另外注意默认地，所有 HTML 元素都有一个静态位置，且无法移动，如需对位置进行操作，要记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute！</li>
 <li>默认地，jQuery 提供针对动画的队列功能，即使用<pre><code>$(&quot;button&quot;).click(function(){
     var div=$(&quot;div&quot;);
     div.animate({height:&apos;300px&apos;,opacity:&apos;0.4&apos;},&quot;slow&quot;);
@@ -329,16 +329,16 @@ jQuery效果
     div.animate({width:&apos;100px&apos;,opacity:&apos;0.8&apos;},&quot;slow&quot;);
 });
 </code></pre>来执行队列功能。</li>
-<li>jQuery stop() 方法用于停止动画或效果，包括滑动、淡入淡出和自定义动画。语法为<code>$(selector).stop(stopAll,goToEnd)</code>，可选的 stopAll 参数规定是否应该清除动画队列。默认是 false，即仅停止活动的动画，允许任何排入队列的动画向后执行；可选的 goToEnd 参数规定是否立即完成当前动画。默认是 false。因此，默认地，stop() 会清除在被选元素上指定的当前动画。</li>
-<li>Chaining 允许我们在一条语句中允许多个 jQuery 方法（在相同的元素上），这样浏览器就不必多次查找相同的元素。如需链接一个动作，只需简单地把该动作追加到之前的动作上。例如<code>$(&quot;#p1&quot;).css(&quot;color&quot;,&quot;red&quot;).slideUp(2000).slideDown(2000)</code>，可以按照希望的格式来写，包含折行和缩进。</li>
+<li>jQuery stop() 方法用于停止动画或效果，包括滑动、淡入淡出和自定义动画。语法为<code>$(selector).stop(stopAll,goToEnd);</code>，可选的 stopAll 参数规定是否应该清除动画队列。默认是 false，即仅停止活动的动画，允许任何排入队列的动画向后执行；可选的 goToEnd 参数规定是否立即完成当前动画。默认是 false。因此，默认地，stop() 会清除在被选元素上指定的当前动画。</li>
+<li>Chaining 允许我们在一条语句中允许多个 jQuery 方法（在相同的元素上），这样浏览器就不必多次查找相同的元素。如需链接一个动作，只需简单地把该动作追加到之前的动作上。例如<code>$(&quot;#p1&quot;).css(&quot;color&quot;,&quot;red&quot;).slideUp(2000).slideDown(2000);</code>，可以按照希望的格式来写，包含折行和缩进。</li>
 </ol>
 <h3 id="jQuery-HTML"><a href="#jQuery-HTML" class="headerlink" title="jQuery HTML"></a>jQuery HTML</h3><hr>
 <ol>
-<li>jQuery 提供一系列与 DOM 相关的方法，这使访问和操作元素和属性变得很容易。jQuery text() 方法设置或返回所选元素的文本内容；jQuery html() 方法设置或返回所选元素的内容（包括 HTML 标记）；val() 方法设置或返回表单字段的值，语法为<code>$(selector).text(&quot;change&quot;)</code>；jQuery attr() 方法用于获取属性值，语法为<code>$(selector).attr(attribute,value)</code>或<code>$(selector).attr(attribute1:value,attritube2:value)</code>。</li>
+<li>jQuery 提供一系列与 DOM 相关的方法，这使访问和操作元素和属性变得很容易。jQuery text() 方法设置或返回所选元素的文本内容；jQuery html() 方法设置或返回所选元素的内容（包括 HTML 标记）；val() 方法设置或返回表单字段的值，语法为<code>$(selector).text(&quot;change&quot;);</code>；jQuery attr() 方法用于获取属性值，语法为<code>$(selector).attr(attribute,value);</code>或<code>$(selector).attr(attribute1:value,attritube2:value);</code>。</li>
 <li>text()、html() 以及 val()，同样拥有回调函数。回调函数由两个参数：被选元素列表中当前元素的下标，以及原始（旧的）值。然后以函数新值返回希望使用的字符串。语法为<code>$(selector).text(function(i,origText){return newvalue;})</code>。</li>
 <li>通过 jQuery，可以很容易地添加新元素/内容。jQuery append() 方法在被选元素的结尾插入内容；jQuery prepend() 方法在被选元素的开头插入内容；jQuery after() 方法在被选元素之后插入内容；jQuery before() 方法在被选元素之前插入内容。</li>
-<li>通过 jQuery，可以很容易地删除已有的 HTML 元素。jQuery remove() 方法删除被选元素及其子元素，语法为<code>$(selector).remove(selector)</code>，可接受一个参数，允许对被删元素进行过滤；jQuery empty() 方法删除被选元素的子元素。</li>
-<li>通过 jQuery，可以很容易地对 CSS 元素进行操作。addClass() 向被选元素添加一个或多个类；removeClass() 从被选元素删除一个或多个类；toggleClass() 对被选元素进行添加/删除类的切换操作；css() 方法设置或返回被选元素的一个或多个样式属性，语法为<code>$(selector).css(propertyname)</code>返回首次匹配的属性值，语法为<code>$(selector).css(propertyname1:value,propertyname2:value,...)</code>为更改属性值。</li>
+<li>通过 jQuery，可以很容易地删除已有的 HTML 元素。jQuery remove() 方法删除被选元素及其子元素，语法为<code>$(selector).remove(selector);</code>，可接受一个参数，允许对被删元素进行过滤；jQuery empty() 方法删除被选元素的子元素。</li>
+<li>通过 jQuery，可以很容易地对 CSS 元素进行操作。addClass() 向被选元素添加一个或多个类；removeClass() 从被选元素删除一个或多个类；toggleClass() 对被选元素进行添加/删除类的切换操作；css() 方法设置或返回被选元素的一个或多个样式属性，语法为<code>$(selector).css(propertyname);</code>返回首次匹配的属性值，语法为<code>$(selector).css(propertyname1:value,propertyname2:value,...);</code>为更改属性值。</li>
 <li>通过 jQuery，很容易处理元素和浏览器窗口的尺寸。width() 方法设置或返回元素的宽度（不包括内边距、边框或外边距）；height() 方法设置或返回元素的高度（不包括内边距、边框或外边距）；innerWidth() 方法返回元素的宽度（包括内边距）；innerHeight() 方法返回元素的高度（包括内边距）；outerWidth() 方法返回元素的宽度（包括内边距和边框）；outerHeight() 方法返回元素的高度（包括内边距和边框）；outerWidth(true) 方法返回元素的宽度（包括内边距、边框和外边距）；outerHeight(true) 方法返回元素的高度（包括内边距、边框和外边距）。</li>
 </ol>
 <h3 id="jQuery遍历"><a href="#jQuery遍历" class="headerlink" title="jQuery遍历"></a>jQuery遍历</h3><hr>
@@ -349,7 +349,8 @@ jQuery效果
 <h3 id="jQuery-AJAX"><a href="#jQuery-AJAX" class="headerlink" title="jQuery AJAX"></a>jQuery AJAX</h3><hr>
 <ol>
 <li>AJAX = 异步 JavaScript 和 XML（Asynchronous JavaScript and XML）。在不重载整个网页的情况下，AJAX 通过后台加载数据，并在网页上进行显示。通过 jQuery AJAX 方法，能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON ，同时能够把这些外部数据直接载入网页的被选元素中。</li>
-<li>jQuery load() 方法从服务器加载数据，并把返回的数据放入被选元素中，语法为<code>$(selector).load(URL,data,callback)</code>，必需的 URL 参数规定加载的 URL，可选的 data 参数规定与请求一同发送的查询字符串键/值对集合，可选的 callback 参数是 load() 方法完成后所执行的函数名称，可以把 jQuery 选择器添加到 URL 参数，</li>
+<li>jQuery load() 方法从服务器加载数据（加载页面的全部元素），并把返回的数据放入被选元素中，语法为<code>$(selector).load(URL,data,callback);</code>，必需的 URL 参数规定加载的 URL，可选的 data 参数规定与请求一同发送的查询字符串键/值对集合，可选的 callback 参数是 load() 方法完成后所执行的函数名称；可以把 jQuery 选择器添加到 URL 参数，加载指定的元素（需要在URL后空一格添加选择器），语法为<code>$(selector).load(URL selector);</code>。</li>
+<li>jQuery get() 和 post() 方法用于通过 HTTP GET 或 POST 请求从服务器请求数据。$.get() 方法通过 HTTP GET 请求从服务器上请求数据，语法为<code>$.get(URL,callback);</code>，回调函数中一般为<code>function(data,status){}</code>第一个回调函数data存有被请求页面的内容，第二个回调函数存有请求的状态；$.post() 方法通过 HTTP POST 请求从服务器上请求数据，语法为<code>$.post(URL,data,callback);</code>，必需的 URL 参数规定您希望请求的 URL，可选的 data 参数规定连同请求发送的数据，可选的 callback 参数是请求成功后所执行的函数名。</li>
 </ol>
 
       
