@@ -86,29 +86,29 @@
 
 <meta name="description" content="前端
 javascript学习杂记
-jQuery
+jQuery效果
 
 从谷歌或微软引用 jQuery。许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所以结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。同时，大多数 CDN 都可以确保当用户向其请求文件时，会从离用户最近的服务器上返回响应，这样也可以提高加载速度。
-在 HTML5 中，只需进行script声明就可以，">
+在 HTML5 中，只需进行script声明就可">
 <meta property="og:type" content="article">
 <meta property="og:title" content="子不语">
 <meta property="og:url" content="http://yoursite.com/2016/07/20/jQuery/index.html">
 <meta property="og:site_name" content="子不语">
 <meta property="og:description" content="前端
 javascript学习杂记
-jQuery
+jQuery效果
 
 从谷歌或微软引用 jQuery。许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所以结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。同时，大多数 CDN 都可以确保当用户向其请求文件时，会从离用户最近的服务器上返回响应，这样也可以提高加载速度。
-在 HTML5 中，只需进行script声明就可以，">
-<meta property="og:updated_time" content="2016-07-20T13:35:27.701Z">
+在 HTML5 中，只需进行script声明就可">
+<meta property="og:updated_time" content="2016-07-21T16:35:06.498Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="子不语">
 <meta name="twitter:description" content="前端
 javascript学习杂记
-jQuery
+jQuery效果
 
 从谷歌或微软引用 jQuery。许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所以结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。同时，大多数 CDN 都可以确保当用户向其请求文件时，会从离用户最近的服务器上返回响应，这样也可以提高加载速度。
-在 HTML5 中，只需进行script声明就可以，">
+在 HTML5 中，只需进行script声明就可">
 
 
 
@@ -303,18 +303,18 @@ jQuery
       
         <h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><hr>
 <h2 id="javascript学习杂记"><a href="#javascript学习杂记" class="headerlink" title="javascript学习杂记"></a>javascript学习杂记</h2><hr>
-<h3 id="jQuery"><a href="#jQuery" class="headerlink" title="jQuery"></a>jQuery</h3><hr>
+<h3 id="jQuery效果"><a href="#jQuery效果" class="headerlink" title="jQuery效果"></a>jQuery效果</h3><hr>
 <ol>
 <li>从谷歌或微软引用 jQuery。许多用户在访问其他站点时，已经从谷歌或微软加载过 jQuery。所以结果是，当他们访问您的站点时，会从缓存中加载 jQuery，这样可以减少加载时间。同时，大多数 CDN 都可以确保当用户向其请求文件时，会从离用户最近的服务器上返回响应，这样也可以提高加载速度。</li>
 <li>在 HTML5 中，只需进行script声明就可以，不需要添加<code>type=&quot;text/javascript&quot;</code>。JavaScript 是 HTML5 以及所有现代浏览器中的默认脚本语言！</li>
 <li>jQuery 语法是为 HTML 元素的选取编制的，可以对元素执行某些操作。基础语法是：<code>$(selector).action()</code>。</li>
 <li>jQuery 函数位于一个 document ready 函数中：<code>$(document).ready(function(){jQuery functions});</code>，为了防止文档在完全加载（就绪）之前运行 jQuery 代码。</li>
 <li>jQuery 元素选择器和属性选择器允许您通过标签名、属性名或内容对 HTML 元素进行选择。</li>
-<li>由于 jQuery 是为处理 HTML 事件而特别设计的，那么当您遵循以下原则时，您的代码会更恰当且更易维护：<ul>
+<li>由于 jQuery 是为处理 HTML 事件而特别设计的，那么当遵循以下原则时，代码会更恰当且更易维护：<ul>
 <li>把所有 jQuery 代码置于事件处理函数中；</li>
 <li>把所有事件处理函数置于文档就绪事件处理器中，即docunment ready 函数中；</li>
 <li>把 jQuery 代码置于单独的 .js 文件中；</li>
-<li>如果存在名称冲突，则重命名 jQuery 库，即使用<code>var jq = jQuery.noConflict()</code>，帮助您使用自己的名称（比如 jq）来代替 $ 符号，或者使用<code>$.noConflict()</code>声明，即可使用jQuery代替$。</li>
+<li>如果存在名称冲突，则重命名 jQuery 库，即使用<code>var jq = jQuery.noConflict()</code>，使用自定名称（比如 jq）来代替 $ 符号，或者使用<code>$.noConflict()</code>声明，即可使用jQuery代替$。</li>
 </ul>
 </li>
 <li>通过 jQuery，可以使用 hide() 和 show() 方法来隐藏和显示 HTML 元素，语法为<code>$(selector).show(speed,callback)</code>，其中 speed 为显示和隐藏的速度，而 callback 为显示和隐藏完成后执行的函数名称，除非设置了 speed 参数，否则不能设置该参数；toggle() 方法，如<code>$(selector).toggle()</code>可以代替 hide() 和 show() 方法，即显示被隐藏的元素和隐藏已显示的元素。</li>
@@ -330,8 +330,26 @@ jQuery
 });
 </code></pre>来执行队列功能。</li>
 <li>jQuery stop() 方法用于停止动画或效果，包括滑动、淡入淡出和自定义动画。语法为<code>$(selector).stop(stopAll,goToEnd)</code>，可选的 stopAll 参数规定是否应该清除动画队列。默认是 false，即仅停止活动的动画，允许任何排入队列的动画向后执行；可选的 goToEnd 参数规定是否立即完成当前动画。默认是 false。因此，默认地，stop() 会清除在被选元素上指定的当前动画。</li>
-<li>Chaining 允许我们在一条语句中允许多个 jQuery 方法（在相同的元素上），这样浏览器就不必多次查找相同的元素。如需链接一个动作，您只需简单地把该动作追加到之前的动作上。例如<code>$(&quot;#p1&quot;).css(&quot;color&quot;,&quot;red&quot;).slideUp(2000).slideDown(2000)</code>，可以按照希望的格式来写，包含折行和缩进。</li>
-<li></li>
+<li>Chaining 允许我们在一条语句中允许多个 jQuery 方法（在相同的元素上），这样浏览器就不必多次查找相同的元素。如需链接一个动作，只需简单地把该动作追加到之前的动作上。例如<code>$(&quot;#p1&quot;).css(&quot;color&quot;,&quot;red&quot;).slideUp(2000).slideDown(2000)</code>，可以按照希望的格式来写，包含折行和缩进。</li>
+</ol>
+<h3 id="jQuery-HTML"><a href="#jQuery-HTML" class="headerlink" title="jQuery HTML"></a>jQuery HTML</h3><hr>
+<ol>
+<li>jQuery 提供一系列与 DOM 相关的方法，这使访问和操作元素和属性变得很容易。jQuery text() 方法设置或返回所选元素的文本内容；jQuery html() 方法设置或返回所选元素的内容（包括 HTML 标记）；val() 方法设置或返回表单字段的值，语法为<code>$(selector).text(&quot;change&quot;)</code>；jQuery attr() 方法用于获取属性值，语法为<code>$(selector).attr(attribute,value)</code>或<code>$(selector).attr(attribute1:value,attritube2:value)</code>。</li>
+<li>text()、html() 以及 val()，同样拥有回调函数。回调函数由两个参数：被选元素列表中当前元素的下标，以及原始（旧的）值。然后以函数新值返回希望使用的字符串。语法为<code>$(selector).text(function(i,origText){return newvalue;})</code>。</li>
+<li>通过 jQuery，可以很容易地添加新元素/内容。jQuery append() 方法在被选元素的结尾插入内容；jQuery prepend() 方法在被选元素的开头插入内容；jQuery after() 方法在被选元素之后插入内容；jQuery before() 方法在被选元素之前插入内容。</li>
+<li>通过 jQuery，可以很容易地删除已有的 HTML 元素。jQuery remove() 方法删除被选元素及其子元素，语法为<code>$(selector).remove(selector)</code>，可接受一个参数，允许对被删元素进行过滤；jQuery empty() 方法删除被选元素的子元素。</li>
+<li>通过 jQuery，可以很容易地对 CSS 元素进行操作。addClass() 向被选元素添加一个或多个类；removeClass() 从被选元素删除一个或多个类；toggleClass() 对被选元素进行添加/删除类的切换操作；css() 方法设置或返回被选元素的一个或多个样式属性，语法为<code>$(selector).css(propertyname)</code>返回首次匹配的属性值，语法为<code>$(selector).css(propertyname1:value,propertyname2:value,...)</code>为更改属性值。</li>
+<li>通过 jQuery，很容易处理元素和浏览器窗口的尺寸。width() 方法设置或返回元素的宽度（不包括内边距、边框或外边距）；height() 方法设置或返回元素的高度（不包括内边距、边框或外边距）；innerWidth() 方法返回元素的宽度（包括内边距）；innerHeight() 方法返回元素的高度（包括内边距）；outerWidth() 方法返回元素的宽度（包括内边距和边框）；outerHeight() 方法返回元素的高度（包括内边距和边框）；outerWidth(true) 方法返回元素的宽度（包括内边距、边框和外边距）；outerHeight(true) 方法返回元素的高度（包括内边距、边框和外边距）。</li>
+</ol>
+<h3 id="jQuery遍历"><a href="#jQuery遍历" class="headerlink" title="jQuery遍历"></a>jQuery遍历</h3><hr>
+<ol>
+<li>parent() 方法返回被选元素的直接父元素；parents() 方法返回被选元素的所有祖先元素，它一路向上直到文档的根元素，使用可选参数来过滤对祖先元素的搜索，可选元素为DOM元素；parentsUntil() 方法返回介于两个给定元素之间的所有祖先元素；children() 方法返回被选元素的所有直接子元素；find() 方法返回被选元素的后代元素，一路向下直到最后一个后代；find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。</li>
+<li>siblings() 方法返回被选元素的所有同胞元素，可以使用可选参数来过滤对同胞元素的搜索；next() 方法返回被选元素的下一个同胞元素；nextAll() 方法返回被选元素的所有跟随的同胞元素；nextUntil() 方法返回介于两个给定参数之间的所有跟随的同胞元素；first() 方法返回被选元素的首个元素；last() 方法返回被选元素的最后一个元素；eq() 方法返回被选元素中带有指定索引号的元素；filter() 方法允许规定一个标准。不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回；not() 方法返回不匹配标准的所有元素。</li>
+</ol>
+<h3 id="jQuery-AJAX"><a href="#jQuery-AJAX" class="headerlink" title="jQuery AJAX"></a>jQuery AJAX</h3><hr>
+<ol>
+<li>AJAX = 异步 JavaScript 和 XML（Asynchronous JavaScript and XML）。在不重载整个网页的情况下，AJAX 通过后台加载数据，并在网页上进行显示。通过 jQuery AJAX 方法，能够使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON ，同时能够把这些外部数据直接载入网页的被选元素中。</li>
+<li>jQuery load() 方法从服务器加载数据，并把返回的数据放入被选元素中，语法为<code>$(selector).load(URL,data,callback)</code>，必需的 URL 参数规定加载的 URL，可选的 data 参数规定与请求一同发送的查询字符串键/值对集合，可选的 callback 参数是 load() 方法完成后所执行的函数名称，可以把 jQuery 选择器添加到 URL 参数，</li>
 </ol>
 
       
@@ -464,7 +482,7 @@ jQuery
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前端"><span class="nav-number">1.</span> <span class="nav-text">前端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript学习杂记"><span class="nav-number">1.1.</span> <span class="nav-text">javascript学习杂记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery"><span class="nav-number">1.1.1.</span> <span class="nav-text">jQuery</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前端"><span class="nav-number">1.</span> <span class="nav-text">前端</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#javascript学习杂记"><span class="nav-number">1.1.</span> <span class="nav-text">javascript学习杂记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery效果"><span class="nav-number">1.1.1.</span> <span class="nav-text">jQuery效果</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-HTML"><span class="nav-number">1.1.2.</span> <span class="nav-text">jQuery HTML</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery遍历"><span class="nav-number">1.1.3.</span> <span class="nav-text">jQuery遍历</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#jQuery-AJAX"><span class="nav-number">1.1.4.</span> <span class="nav-text">jQuery AJAX</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
